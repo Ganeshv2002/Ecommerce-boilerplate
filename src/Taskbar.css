@@ -1,0 +1,37 @@
+/* Taskbar.css */
+.taskbar {
+    background-color: #0577EC;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 100px;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin-right: 50px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-link {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease; 
+    text-decoration: none;
+    color: white;
+  }
+
+  
+  .nav-link:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  

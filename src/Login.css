@@ -1,0 +1,72 @@
+/* Login.css */
+body {
+    background-color: #E5EDF8; /* Set background color for the entire page */
+  }
+  
+  
+  .login-box {
+    max-width: 300px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+  }
+  
+  /* Update input styles */
+  input {
+    margin-bottom: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #F1F5F9;
+    width: 93%;
+    color: #747574;
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+  }
+  
+  input:hover {
+    background-color: #dbe7f5; /* Change background color on hover */
+  }
+  
+  button {
+    background-color: #1B73E8;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #155ba1; /* Change background color on hover */
+  }
+  
+  .new-user-link {
+    margin-top: 16px;
+    text-align: center;
+  }
+  
+  /* Update styles for better alignment of "New User?" and "Create an Account" */
+  .new-user-link span {
+    color: #3498db;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: color 0.3s ease; /* Added transition for hover effect */
+  }
+  
+  .new-user-link span:hover {
+    color: #155ba1; /* Change color on hover */
+  }
+  

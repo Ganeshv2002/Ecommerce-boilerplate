@@ -1,0 +1,133 @@
+/* Update your CSS in HomePage.css */
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .product-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: -10px;
+  }
+  
+  .product-details {
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .product-details h3 {
+    font-size: 14px;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .product-details p {
+    margin: 10px 0;
+  }
+  
+  .product-rating {
+    background-color: #ff5555;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: small;
+  }
+
+  .icon-container {
+    display: flex; /* or grid */
+    justify-content: space-between; /* or end */
+    align-items: center; /* or flex-end */
+  }
+  
+  /* Add this to your CSS file */
+.product-details-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay-content img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .details {
+    padding: 0 20px;
+  }
+  
+  .separator {
+    height: 500px; /* Adjust the height based on your design */
+    width: 1px;
+    background-color: black; /* Adjust the color as needed */
+    margin: 0 20px;
+  }
+  
+  .buttons-container {
+    text-align: center;
+  }
+  
+  .buy-now-button,
+  .add-to-cart-button {
+    background-color: #007bff; /* Adjust the color as needed */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 30px;
+    margin-top: 200px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-size: medium;
+  }
+  
+  .close-button {
+    background-color: rgba(255, 0, 0, 0); /* Change the background color of the close button */
+    color: black; /* Change the text color of the close button */
+    border: none; /* Remove border */
+    cursor: pointer;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .close-button:hover{
+    background-color: rgba(255, 0, 0, 0.497);
+    color: white;
+  }
