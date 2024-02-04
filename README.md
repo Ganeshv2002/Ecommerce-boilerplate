@@ -1,81 +1,50 @@
 # Ecommerce (React) Coding Assessment
 
-## Overview
+# Ecommerce Boilerplate
 
-To complete this assessment, you will need to use this [Ecommerce-boilerplate](https://github.com/gurukishore111/Ecommerce-boilerplate) web app.
+Welcome to the Ecommerce Boilerplate repository! This project serves as a foundation for building a frontend e-commerce web application. The application includes features like product listings, detailed product views, a shopping cart, and more.
 
-The purpose of this assessment is to assess your **skills and approach to composing a simple web app** given an API feed.
+## How I Set It Up
 
-## What to do?
+I've designed this boilerplate with simplicity and modularity in mind. The project uses React for the frontend and Axios for fetching product data. The application allows users to browse products, view details, and add items to the shopping cart.
 
-Your goal is to implement an eCommerce application. The CSS framework/library is totally up to you.
+## Project Features
 
-Although it's a very basic exercise, we will be looking for simple, well-designed, well-commented, and tested code in the submission.
+- **Product Listing:** Display a list of products with images, titles, and prices.
+- **Product Details:** Click on a product to view detailed information.
+- **Add to Cart:** Easily add products to the shopping cart for a seamless shopping experience.
 
-Please include a `README` with setup instructions and any other documentation you created as part of your solution.
+## Future Improvements
 
-Also, add very short info for the following to your `README`:
+Given more time, here are areas I would enhance:
 
-- Describe all the application functionalities
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
+- **CSS Styling:** Improve the overall look and feel of the application.
+- **Persistent Cart Data:** Store cart details locally or in a JSON file.
+- **Order Confirmation Pop-up:** Add a pop-up to confirm successful order placement.
+- **User Registration Page:** Create a user registration page to maintain user data.
+- **Functional Login Page:** Implement a more robust login page with user authentication.
 
-Once you complete implementation, please add the link to the hosted repository (e.g. Github). Alternatively, you may submit your code as a ZIP file too.
-
-(NOTE: You have to use the latest version of v18 and react-router-dom v6)
-
-## How should the application work?
-
-The user of this react application should be able to view all the products. The application should have the following workflow,
-
-1. Create the login/register functionality.
-2. Once the user is authenticated
-3. Users can add the products to the cart page
-4. Also user can add their favourite products
-
-## Development Setup
-
-- Clone this repo
-- `npm install` - To install the dependencies
-- `npm run server` - To start the JSON server
-- `npm start` - To start the react app
-
-## This project's user interface should like this.
+Feel free to explore and build upon this boilerplate for your own e-commerce projects! If you have any questions or suggestions, please open an issue or reach out.
 
 ### Login/Register page
 
-<img width="1512" alt="Screenshot 2022-07-24 at 10 44 13 AM" src="https://user-images.githubusercontent.com/52570524/180701451-5ccce009-0384-426c-b1bc-d7536fd7b142.png">
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/d3a77122-49fd-461f-94be-4da220feebf0)
+
 
 ### Home page
 
-<img width="1512" alt="Screenshot 2022-07-24 at 10 45 58 AM" src="https://user-images.githubusercontent.com/52570524/180701523-b679c753-68ff-47f1-9a1b-f4cc04d88fea.png">
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/d2d39c2c-c78a-4aff-b449-3e70526b804d)
+
 
 ### Product detail page
 
-<img width="675" alt="Screenshot 2022-07-24 at 10 53 17 AM" src="https://user-images.githubusercontent.com/52570524/180701655-7c3d3120-ff81-445a-81d9-b2152db8a776.png">
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/c2e3e526-e811-4fc4-b9fb-d1a335b614f1)
+
 
 ### Cart page
 
-<img width="1415" alt="Screenshot 2022-07-24 at 10 50 18 AM" src="https://user-images.githubusercontent.com/52570524/180701661-a587033d-4616-40f8-9260-dfd3e8b97152.png">
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/a62e5105-12a4-4fbb-bf10-4ab1cb100c4f)
 
-<img width="1472" alt="Screenshot 2022-07-24 at 10 51 16 AM" src="https://user-images.githubusercontent.com/52570524/180701674-31c7e11c-56b3-4f24-83c4-e9d582c4b3f8.png">
 
-## API Usage
-
-API can be launched using npm run server.
-| Endpoint | Result |
-|------------------------------|-----------------------------------------------------|
-| /users | Lists all available users |
-| /products | Lists all available products |
-| /orders | Lists all available orders  
-| /favourites | Lists all available favourites
-
-Refer - [JSON sever](https://www.npmjs.com/package/json-server) docs for more information
-
-## Bonus
-
-- Feel free to add functionality (not mandatory)
-- Use redux/context for state management
-- Well explained readme (screenshot etc)
 
 ---
