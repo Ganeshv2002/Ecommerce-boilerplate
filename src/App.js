@@ -1,7 +1,7 @@
-// App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Login from './Login';
+import Register from './Register';  
 import HomePage from './HomePage';
 import Taskbar from './Taskbar';
 import CartPage from './CartPage';
@@ -28,6 +28,7 @@ const App = () => {
       <Taskbar isLoggedIn={isLoggedIn} onLogout={handleLogout} />
       <Routes>
         <Route path="/login" element={<Login onLogin={handleLogin} />} />
+        <Route path="/register" element={<Register />} />  {/* Add Register route */}
         <Route
           path="/homepage"
           element={

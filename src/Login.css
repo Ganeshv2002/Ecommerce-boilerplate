@@ -63,10 +63,19 @@ body {
     color: #3498db;
     cursor: pointer;
     margin-left: 5px;
-    transition: color 0.3s ease; /* Added transition for hover effect */
+    transition: color 0.3s ease; 
+    text-decoration: none;
   }
   
   .new-user-link span:hover {
     color: #155ba1; /* Change color on hover */
   }
+
+  /* Add this CSS rule to remove the underline */
+.no-underline {
+  text-decoration: none;
+}
+
+  
+
   

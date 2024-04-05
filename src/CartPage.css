@@ -1,71 +1,222 @@
 .cart-page {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-box {
+  margin: 10px;
+  margin: 50px;
+  width: 60%;
+}
+
+.cart-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  object-fit: cover;
+}
+
+.cart-details {
+  width: 60%;
+}
+
+.count-options {
+  display: flex;
+  align-items: center;
+}
+
+.count-options button {
+  margin: 0 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 20px;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.price-details {
+  margin: 50px;
+  width: 30%;
+  max-height: 250px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price-details table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.price-details table td {
+  padding: 5px;
+}
+
+.total-row {
+  border-top: 2px solid black;
   
-  .cart-box {
-    margin: 10px;
-    margin: 50px;
-    width: 60%;
-  }
+}
+
+.place-order-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
   
-  .cart-part {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
+.place-order-button:hover {
+  background-color: white;
+  color: #4CAF50;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
   
-  .product-image {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    object-fit: cover;
-  }
+}
+
+.order-placed-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.order-placed-popup button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-weight: lighter;
+  font-size: 28px;
   
-  .cart-details {
-    width: 60%;
-  }
+  background-color: white;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.order-placed-popup button:hover {
   
-  .count-options {
-    display: flex;
-    align-items: center;
-  }
+  color: red;
   
-  .count-options button {
-    margin: 0 5px;
-    padding: 5px;
-    cursor: pointer;
+}
+
+
+.close-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 15px;
+  color: #ff0000; /* Red color for the close icon */
+  border: 2px solid #ff0000; /* Red border */
+  border-radius: 50%; 
+  padding-bottom: 3px;
+  font-weight: bold;
+  width: 18px; 
+  height: 15px; 
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.order-placed-popup svg {
+  width: 100px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  &.circle {
+    -webkit-animation: dash .9s ease-in-out;
+    animation: dash .9s ease-in-out;
   }
-  
-  .price-details {
-    margin: 50px;
-    width: 30%;
-    padding: 30px;
-    border: 1px solid #ddd;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  &.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash .9s .35s ease-in-out forwards;
+    animation: dash .9s .35s ease-in-out forwards;
   }
-  
-  .price-details table {
-    width: 100%;
-    margin-bottom: 10px;
+  &.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+    animation: dash-check .9s .35s ease-in-out forwards;
   }
-  
-  .price-details table td {
-    padding: 5px;
-    border-bottom: 1px solid #ddd;
+}
+
+.order-placed-popup p {
+  text-align: center;
+  margin: 20px 0 60px;
+  font-size: 1.25em;
+  &.success {
+    color: #73AF55;
   }
-  
-  .place-order-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  &.error {
+    color: #D06079;
   }
-  
+}
+.place-order-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+}

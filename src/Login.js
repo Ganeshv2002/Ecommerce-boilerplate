@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import Taskbar from './Taskbar'; // Import Taskbar at the beginning
+import { Link, useNavigate } from 'react-router-dom'; 
 import './Login.css';
 
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState();
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = () => {
@@ -50,7 +49,7 @@ const Login = ({ onLogin }) => {
         </form>
 
         <div className="new-user-link">
-          New user? <span>Create an Account</span>
+          New user? <Link to="/register" className="no-underline">Create an Account</Link>
         </div>
       </div>
     </div>

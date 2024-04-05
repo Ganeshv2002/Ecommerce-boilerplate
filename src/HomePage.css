@@ -61,6 +61,16 @@
     align-items: center; /* or flex-end */
   }
   
+  
+ 
+  
+  /* Hover effect for Add to Cart icon */
+  .icon-container svg:last-child:hover {
+    
+    color: rgb(153, 153, 153);
+    transition: 0.3s;
+  }
+  
   /* Add this to your CSS file */
 .product-details-overlay {
     position: fixed;
@@ -72,7 +82,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
+  .product-detail-image {
+    width: 300px; /* Set your desired width */
+    height: auto;
+    object-fit: contain;
+  }
+  
   
   .overlay-content {
     display: flex;
@@ -80,13 +97,13 @@
     justify-content: space-evenly;
     background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .overlay-content img {
-    max-width: 100%;
-    border-radius: 8px;
+    
+    border-radius: 2px;
   }
   
   .details {
@@ -105,21 +122,35 @@
   }
   
   .buy-now-button,
-  .add-to-cart-button {
-    background-color: #007bff; /* Adjust the color as needed */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 3px;
-    margin: 30px;
-    margin-top: 200px;
-    cursor: pointer;
-    height: 50px;
-    width: 150px;
-    font-size: medium;
-  }
+.add-to-cart-button {
+  background-color: white; /* Adjust the color as needed */
+  color: #007bff;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border: 2px solid #007bff; /* Border added here */
+
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-top: 200px;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  font-size: larger;
+
+}
+
+.buy-now-button:hover,
+.add-to-cart-button:hover {
+  color: white;
+  background-color: #007bff; /* Adjust the color as needed */
+}
+
+.buttons-container {
+  margin-top: 20px; 
+}
   
   .close-button {
-    background-color: rgba(255, 0, 0, 0); /* Change the background color of the close button */
+    background-color: white;
     color: black; /* Change the text color of the close button */
     border: none; /* Remove border */
     cursor: pointer;
@@ -128,6 +159,6 @@
   }
   
   .close-button:hover{
-    background-color: rgba(255, 0, 0, 0.497);
-    color: white;
+    background-color: white;
+    color: rgb(255, 71, 71);
   }
