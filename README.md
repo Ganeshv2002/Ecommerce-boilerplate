@@ -8,6 +8,28 @@ Welcome to the Ecommerce Boilerplate repository! This project serves as a founda
 
 I've designed this boilerplate with simplicity and modularity in mind. The project uses React for the frontend and Axios for fetching product data. The application allows users to browse products, view details, and add items to the shopping cart.
 
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+-You have installed the latest version of Node.js.
+
+## Installation
+To install the project, follow these steps:
+
+Clone the repository:
+```git clone https://github.com/your-username/your-project.git```
+
+Navigate to the project directory:
+```cd your-project```
+
+Install the dependencies:
+```npm install```
+
+## Usage
+To run the project locally, use the following command:
+```npm start```
+This will start the development server. Open http://localhost:3000 to view the website in your browser.
+
 ## Project Features
 
 - **Product Listing:** Display a list of products with images, titles, and prices.
@@ -28,22 +50,27 @@ Feel free to explore and build upon this boilerplate for your own e-commerce pro
 
 ### Login/Register page
 
-![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/d3a77122-49fd-461f-94be-4da220feebf0)
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/9dcd6c97-73b8-4f22-aa1b-357c32f5feef)
+
+
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/c4acbbad-4c91-4a5b-90bc-bd80d40e5cb2)
 
 
 ### Home page
 
-![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/d2d39c2c-c78a-4aff-b449-3e70526b804d)
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/065eb7f2-9feb-4189-be2c-3e5912fa6c90)
 
 
-### Product detail page
+### Product detail 
 
-![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/c2e3e526-e811-4fc4-b9fb-d1a335b614f1)
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/3a2a07df-3aa9-42e1-a722-320990931736)
 
 
 ### Cart page
 
-![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/a62e5105-12a4-4fbb-bf10-4ab1cb100c4f)
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/babd2d8a-0d9b-4683-b6c1-c6996f9bcda6)
+
+![image](https://github.com/Ganeshv2002/Ecommerce-boilerplate/assets/72639054/4a159251-a3a0-4f76-baad-890fcd2f8433)
 
 
 
